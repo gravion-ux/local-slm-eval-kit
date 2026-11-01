@@ -1,0 +1,31 @@
+{
+  "name": "local-slm-eval-kit",
+  "version": "0.1.0",
+  "description": "Runs a repeatable evaluation suite against a local small language model through a command adapter, with deterministic metrics and a report you can diff between runs.",
+  "license": "MIT",
+  "author": "gravion-ux",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "slm-eval": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/adapter.test.js test/cli.test.js test/index.test.js test/metrics.test.js test/redact.test.js test/report.test.js test/runner.test.js test/tasks.test.js",
+    "check": "node --check src/index.js && node --check src/cli.js && node --check src/tasks.js && node --check src/adapter.js && node --check src/metrics.js && node --check src/runner.js && node --check src/report.js && node --check src/redact.js",
+    "eval": "node src/cli.js tasks"
+  },
+  "keywords": [
+    "llm",
+    "slm",
+    "evaluation",
+    "benchmark",
+    "local",
+    "llama",
+    "ollama"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
