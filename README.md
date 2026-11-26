@@ -1,8 +1,10 @@
+<p align="center"><img src="assets/banner.svg" alt="local-slm-eval-kit banner" width="100%"/></p>
+
 # Local SLM Evaluation Kit
 
-[![CI](https://github.com/gravion-ux/local-slm-eval-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/local-slm-eval-kit/actions/workflows/ci.yml)
+[![CI](https://github.com/gravion-ux/local-slm-eval-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/local-slm-eval-kit/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Runs a repeatable evaluation suite against a **local** small language model.
+**Runs a repeatable evaluation suite against a local small language model.**
 
 Small models are served in wildly different ways — llama.cpp's `llama-cli`, Ollama's
 `ollama run`, a llamafile, a Python script — so this kit never links against a specific
