@@ -10,7 +10,7 @@
       "slm-eval": "src/cli.js"
     },
     "scripts": {
-      "test": "node --test test/adapter.test.js test/cli.test.js test/metrics.test.js test/redact.test.js test/report.test.js test/runner.test.js test/tasks.test.js",
+      "test": "node --test test/adapter.test.js test/cli.test.js test/metrics.test.js test/redact.test.js test/report.test.js test/runner.test.js test/tasks.test.js test/metrics-edges.test.js",
       "check": "node --check src/index.js && node --check src/cli.js && node --check src/tasks.js && node --check src/adapter.js && node --check src/metrics.js && node --check src/runner.js && node --check src/report.js && node --check src/redact.js",
       "eval": "node src/cli.js tasks"
     },

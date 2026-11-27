@@ -45,7 +45,7 @@ function scoreContains(output, task = {}) {
  * @returns {{score: number, pass: boolean, detail: string}}
  */
 function scoreNotContains(output, task = {}) {
-  const forbidden = Array.isArray(task.forbidden) ? task.forbidden : [];
+  const forbidden = (Array.isArray(task.forbidden) ? task.forbidden : []).filter((p) => text(p).length > 0);
   const body = text(output);
   for (const phrase of forbidden) {
     if (body.includes(text(phrase))) {
